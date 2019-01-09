@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D16614E91CE24B2E00D36003 /* ConnectIQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D16614E81CE24B2E00D36003 /* ConnectIQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C48F466D21E6101E004A2BFF /* ConnectIQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C48F466A21E6100F004A2BFF /* ConnectIQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D60D04B8199E546C00870EDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D60D04B7199E546C00870EDC /* main.m */; };
 		D60D04BC199E546C00870EDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D60D04BB199E546C00870EDC /* AppDelegate.m */; };
 		D60D04C4199E546C00870EDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60D04C3199E546C00870EDC /* Images.xcassets */; };
@@ -21,7 +21,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D16614E91CE24B2E00D36003 /* ConnectIQ.framework in Embed Frameworks */,
+				C48F466D21E6101E004A2BFF /* ConnectIQ.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -29,7 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D16614E81CE24B2E00D36003 /* ConnectIQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConnectIQ.framework; path = ../ConnectIQ.framework; sourceTree = "<group>"; };
+		C48F466A21E6100F004A2BFF /* ConnectIQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConnectIQ.framework; path = ../../ConnectIQ.framework; sourceTree = "<group>"; };
 		D60D04A8199E546C00870EDC /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60D04B3199E546C00870EDC /* ExampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleApp-Info.plist"; sourceTree = "<group>"; };
 		D60D04B7199E546C00870EDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,11 +50,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C48F466921E60FED004A2BFF /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C48F466A21E6100F004A2BFF /* ConnectIQ.framework */,
+			);
+			name = Framework;
+			path = ExampleApp;
+			sourceTree = "<group>";
+		};
 		D60D049F199E546C00870EDC = {
 			isa = PBXGroup;
 			children = (
 				D60D04B1199E546C00870EDC /* ExampleApp */,
-				D60D04AA199E546C00870EDC /* Frameworks */,
+				C48F466921E60FED004A2BFF /* Framework */,
 				D60D04A9199E546C00870EDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,14 +74,6 @@
 				D60D04A8199E546C00870EDC /* ExampleApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D60D04AA199E546C00870EDC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D16614E81CE24B2E00D36003 /* ConnectIQ.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D60D04B1199E546C00870EDC /* ExampleApp */ = {
