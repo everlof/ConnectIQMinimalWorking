@@ -16,7 +16,7 @@ NSString * const ReturnURLScheme = @"xoxo-9191";
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor redColor]];
+    [self.view setBackgroundColor:[UIColor blueColor]];
 }
 @end
 
