@@ -8,14 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D16614E91CE24B2E00D36003 /* ConnectIQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D16614E81CE24B2E00D36003 /* ConnectIQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D60D04AC199E546C00870EDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D04AB199E546C00870EDC /* Foundation.framework */; };
-		D60D04AE199E546C00870EDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D04AD199E546C00870EDC /* CoreGraphics.framework */; };
-		D60D04B0199E546C00870EDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D04AF199E546C00870EDC /* UIKit.framework */; };
 		D60D04B8199E546C00870EDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D60D04B7199E546C00870EDC /* main.m */; };
 		D60D04BC199E546C00870EDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D60D04BB199E546C00870EDC /* AppDelegate.m */; };
 		D60D04C4199E546C00870EDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60D04C3199E546C00870EDC /* Images.xcassets */; };
-		D60D04CC199E546D00870EDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D04AB199E546C00870EDC /* Foundation.framework */; };
-		D60D04CD199E546D00870EDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D04AF199E546C00870EDC /* UIKit.framework */; };
 		E0DB80F51C4D4BEE0098FEB9 /* LaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DB80F41C4D4BEE0098FEB9 /* LaunchStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -46,12 +41,8 @@
 /* Begin PBXFileReference section */
 		D16614E81CE24B2E00D36003 /* ConnectIQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConnectIQ.framework; path = ../ConnectIQ.framework; sourceTree = "<group>"; };
 		D60D04A8199E546C00870EDC /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D60D04AB199E546C00870EDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D60D04AD199E546C00870EDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D60D04AF199E546C00870EDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D60D04B3199E546C00870EDC /* ExampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleApp-Info.plist"; sourceTree = "<group>"; };
 		D60D04B7199E546C00870EDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D60D04B9199E546C00870EDC /* ExampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleApp-Prefix.pch"; sourceTree = "<group>"; };
 		D60D04BA199E546C00870EDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D60D04BB199E546C00870EDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		D60D04C3199E546C00870EDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -64,9 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D60D04AE199E546C00870EDC /* CoreGraphics.framework in Frameworks */,
-				D60D04B0199E546C00870EDC /* UIKit.framework in Frameworks */,
-				D60D04AC199E546C00870EDC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,8 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D60D04CD199E546D00870EDC /* UIKit.framework in Frameworks */,
-				D60D04CC199E546D00870EDC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,9 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				D16614E81CE24B2E00D36003 /* ConnectIQ.framework */,
-				D60D04AB199E546C00870EDC /* Foundation.framework */,
-				D60D04AD199E546C00870EDC /* CoreGraphics.framework */,
-				D60D04AF199E546C00870EDC /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,7 +101,6 @@
 				D60D04BB199E546C00870EDC /* AppDelegate.m */,
 				D60D04C3199E546C00870EDC /* Images.xcassets */,
 				E0DB80F41C4D4BEE0098FEB9 /* LaunchStoryboard.storyboard */,
-				D60D04B9199E546C00870EDC /* ExampleApp-Prefix.pch */,
 				D60D04B3199E546C00870EDC /* ExampleApp-Info.plist */,
 				D60D04B7199E546C00870EDC /* main.m */,
 			);
@@ -356,7 +338,6 @@
 					"$(SRCROOT)/..",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ExampleApp/ExampleApp-Prefix.pch";
 				INFOPLIST_FILE = "ExampleApp/ExampleApp-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
@@ -379,7 +360,6 @@
 					"$(SRCROOT)/..",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ExampleApp/ExampleApp-Prefix.pch";
 				INFOPLIST_FILE = "ExampleApp/ExampleApp-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
