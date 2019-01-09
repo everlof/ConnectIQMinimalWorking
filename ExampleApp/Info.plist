@@ -26,7 +26,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>None</string>
 			<key>CFBundleURLName</key>
-			<string>com.garmin.ExampleApp</string>
+			<string>se.everlof.MiniExampleApp</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>xoxo-9191</string>

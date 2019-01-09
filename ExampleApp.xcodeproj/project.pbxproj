@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		C48F466A21E6100F004A2BFF /* ConnectIQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConnectIQ.framework; path = ../../ConnectIQ.framework; sourceTree = "<group>"; };
 		D60D04A8199E546C00870EDC /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D60D04B3199E546C00870EDC /* ExampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleApp-Info.plist"; sourceTree = "<group>"; };
+		D60D04B3199E546C00870EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60D04B7199E546C00870EDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D60D04BA199E546C00870EDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D60D04BB199E546C00870EDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -83,7 +83,7 @@
 				D60D04BB199E546C00870EDC /* AppDelegate.m */,
 				D60D04C3199E546C00870EDC /* Images.xcassets */,
 				E0DB80F41C4D4BEE0098FEB9 /* LaunchStoryboard.storyboard */,
-				D60D04B3199E546C00870EDC /* ExampleApp-Info.plist */,
+				D60D04B3199E546C00870EDC /* Info.plist */,
 				D60D04B7199E546C00870EDC /* main.m */,
 			);
 			path = ExampleApp;
@@ -275,10 +275,10 @@
 					"$(SRCROOT)/..",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "ExampleApp/ExampleApp-Info.plist";
+				INFOPLIST_FILE = ExampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.garmin.MiniExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = se.everlof.MiniExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -297,10 +297,10 @@
 					"$(SRCROOT)/..",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "ExampleApp/ExampleApp-Info.plist";
+				INFOPLIST_FILE = ExampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.garmin.MiniExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = se.everlof.MiniExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
