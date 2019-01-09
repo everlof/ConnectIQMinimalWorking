@@ -7,9 +7,18 @@
 
 #import "AppDelegate.h"
 #import <ConnectIQ/ConnectIQ.h>
-#import "Constants.h"
-#import "DeviceManager.h"
-#import "DeviceListViewController.h"
+
+NSString * const ReturnURLScheme = @"xoxo-9191";
+
+@interface ViewController : UIViewController
+@end
+
+@implementation ViewController
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor redColor]];
+}
+@end
 
 @interface AppDelegate () <IQUIOverrideDelegate>
 
@@ -23,14 +32,16 @@
     // method(such as self in this example). You can then bypass the alert dialog
     // or provide your own.
     [[ConnectIQ sharedInstance] initializeWithUrlScheme:ReturnURLScheme uiOverrideDelegate:nil];
-    [[DeviceManager sharedManager] restoreDevicesFromFileSystem];
 
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    DeviceListViewController *viewController = [[DeviceListViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:viewController];
-    self.window.rootViewController = controller;
+    self.window.rootViewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
     [self.window makeKeyAndVisible];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[ConnectIQ sharedInstance] showConnectIQDeviceSelection];
+    });
+
     return YES;
 }
 
@@ -58,8 +69,7 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     NSLog(@"Received URL from '%@': %@", sourceApplication, url);
-
-    return [[DeviceManager sharedManager] handleOpenURL:url sourceApplication:sourceApplication];
+    return true;
 }
 
 - (void)needsToInstallConnectMobile {
