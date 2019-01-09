@@ -129,31 +129,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
-				es,
-				fr,
-				de,
-				"zh-Hans",
-				"zh-Hant",
-				ja,
-				it,
-				nl,
-				ko,
-				pt,
-				"pt-PT",
-				da,
-				fi,
-				nb,
-				ru,
-				pl,
-				cs,
-				hu,
-				hr,
-				el,
-				sk,
-				id,
-				ms,
+				en
 			);
 			mainGroup = D60D049F199E546C00870EDC;
 			productRefGroup = D60D04A9199E546C00870EDC /* Products */;
